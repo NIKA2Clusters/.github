@@ -15,6 +15,10 @@ On DIRAC (Cambridge).
 
 ## Installation instructions
 
+### Python version
+
+We work with Python 3.11. 
+
 ### Dirac (Cambridge)
 
 Clone `class_sz`:
