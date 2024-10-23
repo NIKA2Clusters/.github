@@ -16,3 +16,9 @@ On DIRAC (Cambridge).
 ## Installation instructions
 
 ### Dirac (Cambridge)
+
+Clone `class_sz`:
+
+```bash
+git clone https://github.com/NIKA2Clusters/class_sz.git
+```
