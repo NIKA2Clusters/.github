@@ -37,4 +37,29 @@ Python virtual environment:
 mkdir python_environments
 python3.11 -m venv python_environments/cluster_base_env
 source python_environments/cluster_base_env/bin/activate
+
+### nika2e (Grenoble)
+
+clone `class_sz`
+
+```bash
+git clone https://github.com/NIKA2Clusters/class_sz.git
+```
+Python virtual environment:
+```bash
+mkdir env
+python3 -m venv env/cluster_base_env
+source env/cluster_base_env/bin/activate
+```
+python version : 3.10.12
+
+
+
+
+
+
+
+
+
+
 ```
