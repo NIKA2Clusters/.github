@@ -26,3 +26,10 @@ Clone `class_sz`:
 ```bash
 git clone https://github.com/NIKA2Clusters/class_sz.git
 ```
+Python virtual environment: 
+
+```bash
+mkdir python_environments
+python3.11 -m venv python_environments/cluster_base_env
+source python_environments/cluster_base_env/bin/activate
+```
