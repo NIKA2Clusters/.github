@@ -85,4 +85,15 @@ make clean
 make -j
 export PYTHONPATH=$(pwd)/python/classy_szfast:$PYTHONPATH
 ```
-installation went to the end
+installation went to the end`
+
+modification of `/data2f-a/Workspace/moyer/cosmo/env/cluster_base_env/bin/activate`
+addition of 
+```bash
+PATH_TO_CLASS_SZ_DATA="/data2f-a/Workspace/moyer/cosmo/class_sz/class_sz_data_directory" # rajout AMA
+export PATH_TO_CLASS_SZ_DATA
+export PYTHONPATH="/data2f-a/Workspace/moyer/cosmo/class_sz/class-sz/python/classy_szfast:"
+```
+
+
+
