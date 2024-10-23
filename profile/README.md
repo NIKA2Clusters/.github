@@ -13,6 +13,11 @@ $RDS/bb667/cluster_counts/NIKA2Clusters
 
 On DIRAC (Cambridge).
 
+'''bash
+/data2f-a/Workspace/moyer/cosmo/NIKA2Clusters
+'''
+on nika2e (Grenoble)
+
 ## Installation instructions
 
 ### Python version
