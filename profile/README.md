@@ -1,12 +1,18 @@
-## NIKA2 cluster cosmology codes
+# NIKA2 cluster cosmology codes
 
 (Updated October 2024)
 
 
-### Project location 
+## Project location 
 
 Our project is in 
 
+```bash
 $RDS/bb667/cluster_counts/NIKA2Clusters
+```bash
 
-On DIRAC (Cambridge).  
+On DIRAC (Cambridge).
+
+## Installation instructions
+
+### Dirac (Cambridge)
