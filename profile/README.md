@@ -94,6 +94,14 @@ PATH_TO_CLASS_SZ_DATA="/data2f-a/Workspace/moyer/cosmo/class_sz/class_sz_data_di
 export PATH_TO_CLASS_SZ_DATA
 export PYTHONPATH="/data2f-a/Workspace/moyer/cosmo/class_sz/class-sz/python/classy_szfast:"
 ```
+clone `SOLikeT`
+
+```bash
+git clone https://github.com/simonsobs/soliket
+cd soliket
+git checkout dev-clusters-both-classy_sz
+pip install -e .
+```
 
 
 
