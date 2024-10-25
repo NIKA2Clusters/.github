@@ -218,8 +218,12 @@ cobaya.log.LoggedError: Failed to get defaults for component or class 'classy_sz
 -------------------------------------------------------------
 
 (cluster_base_env) moyer@lpsc-nika2e:/data2f-a/Workspace/moyer/cosmo$ 
-
 ```
+
+change of the file `/class_sz/class-sz/python/classy_szfast/classy_szfast/config.py`
+
+commented the line `class_sz_data.get_data_from_class_sz_repo(path_to_class_sz_data)`
+after commentng this line, one of my old yaml file succeed to run but after 1h30 still in the burning phase
 
 
 
