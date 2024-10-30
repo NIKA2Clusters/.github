@@ -26,6 +26,12 @@ We work with Python 3.11.
 
 ### Dirac (Cambridge)
 
+We created an environment variable: 
+
+```bash
+export GOTONIKA2=/home/bb667/rds/rds-dirac-dp002/AdvACT/bb667/cluster_counts/NIKA2Clusters
+```
+
 Clone `class_sz`:
 
 ```bash
@@ -74,17 +80,21 @@ chmod +x select_makefile.sh
 
 We don't need to download emulator data if they are already on the system. Check content of `$PATH_TO_CLASS_SZ_DATA`.
 
-We need to install cython:
 
-```bash
-pip install cython numpy 
-```
-
-And then we are ready to make (from inside `cd class_sz/class-sz`): 
+And then we are ready to make (from inside `cd $GOTONIKA2/class_sz/class-sz`): 
 
 ```bash
 make clean
-make -j 
+make -j
+```
+
+and finally, we need to tell our environment where `classy_szfast` is: 
+
+```bash
+ export PYTHONPATH=$GOTONIKA2/class_sz/class-sz/python/classy_szfast:$PYTHONPATH
+```
+
+It seems there is an import problem when we try to import classy_sz from the same place where get_cosmopower_emus is.
 
 
 
