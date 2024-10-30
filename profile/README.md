@@ -32,6 +32,12 @@ We created an environment variable:
 export GOTONIKA2=/home/bb667/rds/rds-dirac-dp002/AdvACT/bb667/cluster_counts/NIKA2Clusters
 ```
 
+Source environment with (see below to create it):
+
+```bash
+source $GOTONIKA/python_environments/cluster_base_env/bin/activate
+```
+
 Clone `class_sz`:
 
 ```bash
@@ -42,7 +48,7 @@ Python virtual environment:
 ```bash
 mkdir python_environments
 python3.11 -m venv python_environments/cluster_base_env
-source python_environments/cluster_base_env/bin/activate
+source $GOTONIKA/python_environments/cluster_base_env/bin/activate
 ```
 
 #### Dependencies
