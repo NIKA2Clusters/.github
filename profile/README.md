@@ -39,6 +39,58 @@ python3.11 -m venv python_environments/cluster_base_env
 source python_environments/cluster_base_env/bin/activate
 ```
 
+#### Dependencies
+
+We need to install a few dependencies. Once the environment has been sourced. 
+
+```bash
+python -m pip install "mpi4py>=3" --upgrade --no-binary :all:
+```
+
+After this command has run, you should be able to do:
+
+```bash
+mpirun -n 2 python -c "from mpi4py import MPI, __version__; print(__version__ if MPI.COMM_WORLD.Get_rank() else '')"
+```
+
+which should print the mpirun version. 
+
+#### Installation of class_sz in development mode
+
+```bash
+git clone https://github.com/CLASS-SZ/get_cosmopower_emus.git
+cd get_cosmopower_emus
+pip install -e .
+cd ..
+git clone https://github.com/CLASS-SZ/class_sz_data.git
+cd class_sz_data
+pip install -e .
+cd ..
+cd class_sz/class-sz/python
+git clone https://github.com/CLASS-SZ/classy_szfast
+cd ..
+chmod +x select_makefile.sh
+```
+
+We don't need to download emulator data if they are already on the system. Check content of `$PATH_TO_CLASS_SZ_DATA`.
+
+We need to install cython:
+
+```bash
+pip install cython numpy 
+```
+
+And then we are ready to make (from inside `cd class_sz/class-sz`): 
+
+```bash
+make clean
+make -j 
+
+
+
+
+
+
 ### nika2e (Grenoble)
 
 clone `class_sz`
