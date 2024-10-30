@@ -35,7 +35,7 @@ export GOTONIKA2=/home/bb667/rds/rds-dirac-dp002/AdvACT/bb667/cluster_counts/NIK
 Source environment with (see below to create it):
 
 ```bash
-source $GOTONIKA/python_environments/cluster_base_env/bin/activate
+source $GOTONIKA2/python_environments/cluster_base_env/bin/activate
 ```
 
 Clone `class_sz`:
