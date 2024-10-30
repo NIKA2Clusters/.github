@@ -93,8 +93,11 @@ and finally, we need to tell our environment where `classy_szfast` is:
 ```bash
  export PYTHONPATH=$GOTONIKA2/class_sz/class-sz/python/classy_szfast:$PYTHONPATH
 ```
+Note that we can add this line to our `$GOTONIKA2/python_environments/cluster_base_env/bin/activate`.
 
-It seems there is an import problem when we try to import classy_sz from the same place where get_cosmopower_emus is.
+That should work fine. 
+
+
 
 
 
