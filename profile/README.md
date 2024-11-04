@@ -82,6 +82,7 @@ cd class_sz/class-sz/python
 git clone https://github.com/CLASS-SZ/classy_szfast
 cd ..
 chmod +x select_makefile.sh
+./select_makefile.sh
 ```
 
 We don't need to download emulator data if they are already on the system. Check content of `$PATH_TO_CLASS_SZ_DATA`.
