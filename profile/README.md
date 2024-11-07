@@ -48,7 +48,7 @@ Python virtual environment:
 ```bash
 mkdir python_environments
 python3.11 -m venv python_environments/cluster_base_env
-source $GOTONIKA/python_environments/cluster_base_env/bin/activate
+source $GOTONIKA2/python_environments/cluster_base_env/bin/activate
 ```
 
 #### Dependencies
